@@ -1,0 +1,35 @@
+﻿<Page x:Class="GerenciadorDeSenhas.Views.ListaSenhas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GerenciadorDeSenhas.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ListaSenhas">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel x:Name="painelSenhas">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Item 1" Grid.Column="0" VerticalAlignment="Center" FontSize="32" MouseLeftButtonDown="editarPass"/>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <Image Source="../Imagens/edit.png" Width="50" Height="50"/>
+                        <Image Source="../Imagens/trash.png" Width="50" Height="50"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+        <Button Grid.Row="1" Content="Adicionar" Click="addPass"/>
+    </Grid>
+</Page>
