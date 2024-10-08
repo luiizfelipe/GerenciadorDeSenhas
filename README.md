@@ -16,3 +16,16 @@ Um gerenciador de senhas simples e seguro, desenvolvido em C# utilizando .NET e 
 - Criação e edição de entradas de senha.
 - Criptografia de dados sensíveis.
 
+## Criptografia
+
+As credenciais são armazenadas de forma criptografada, tanto as utilizadas para realizar login quanto aquelas que você deseja salvar para não esquecer. A criptografia aplicada nas credenciais salvas utiliza apenas uma operação XOR com a senha da sua conta, que, por sua vez, é armazenada usando o algoritmo de hash SHA-256.
+ 
+## Telas
+### Login
+![Print da tela de Login](/Imagens/login.png)
+### Registrar
+![Print da tela de Registro](/Imagens/registrar.png)
+### Lista de senhas
+![Print da tela para listar as senhas](/Imagens/lista.png)
+### Detalhes e edição da senha
+![Print da tela de detalhes da senha](/Imagens/detalhes.png)

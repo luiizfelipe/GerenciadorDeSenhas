@@ -273,6 +273,11 @@
   <ItemGroup>
     <Resource Include="Imagens\trash.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagens\lista.png" />
+    <Resource Include="Imagens\login.png" />
+    <Resource Include="Imagens\registrar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
